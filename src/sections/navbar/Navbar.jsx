@@ -1,7 +1,10 @@
-
-import './navbar.css'
+import "./navbar.css";
 const NavBar = () => {
-  return <nav><h2>Navbar</h2></nav>;
+  return (
+    <nav>
+      <h2>Navbar</h2>
+    </nav>
+  );
 };
 
 export default NavBar;
