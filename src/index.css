@@ -35,7 +35,7 @@
 
 html {
     scroll-behavior: smooth;
-    --cursor-color: var(--color-primary)
+    --cursor-color: var(--color-black)
 }
 
 body {
