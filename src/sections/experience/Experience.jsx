@@ -34,13 +34,13 @@ const Experience = () => {
           <h3>Backend Development</h3>
           <div className="experience__content">
             {data.backendExperience.map((item) => (
-              <article className="experience__details">
+              <article key={item.id} className="experience__details">
                 <span className="experience__details-icon">
                   <BsPatchCheckFill />
                 </span>
                 <div>
-                  <h4>Node JS</h4>
-                  <small className="text-light">Experienced</small>
+                  <h4>{item.experienceName}</h4>
+                  <small className="text-light">{item.experienceLevel}</small>
                 </div>
               </article>
             ))}
