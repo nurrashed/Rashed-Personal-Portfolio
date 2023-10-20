@@ -18,7 +18,17 @@
 
 .card.light:hover {
     background: transparent;
-    border:3px solid var(--color-white);
+    border: 2px solid var(--color-white);
+}
+
+
+.card.gray {
+    background: var(--color-light);
+}
+
+.card.gray:hover {
+    background: transparent;
+    border: 2px solid var(--color-light);
 }
 
 
