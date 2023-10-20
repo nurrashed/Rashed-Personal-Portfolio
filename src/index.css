@@ -147,6 +147,15 @@ img {
     border-color: var(--color-white);
 }
 
+.btn.gray {
+    background: var(--color-light);
+}
+
+.btn.gray:hover {
+    background: transparent;
+    border-color: var(--color-light);
+}
+
 .btn.primary {
     background: var(--color-primary);
     /* text color always white that's why i didn't use a variable color */
