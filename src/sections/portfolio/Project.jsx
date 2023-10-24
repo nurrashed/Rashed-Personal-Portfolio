@@ -11,7 +11,7 @@ const Project = ({ project }) => {
       <div className="portfolio__project-cta">
         <a
           href={project.demo}
-          className="btn sm"
+          className="btn sm white"
           target="_blank"
           rel="noopner noreferrer"
         >
