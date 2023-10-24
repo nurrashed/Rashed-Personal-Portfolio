@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -16,31 +17,29 @@ const Testimonials = () => {
   return (
     <section id="testimonials">
       <h2>What My Colleagues Say about me</h2>
-      <p>These are unbiased testmonials from some of my Colleagues</p>
-      <div className="container">
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={30}
-          breakpoints={{
-            601: { slidesPerView: 2 },
-            1025: { slidesPerView: 3 },
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          mousewheel={true}
-          keyboard={{
-            enabled: true,
-          }}
-          modules={[Pagination, Autoplay, Keyboard]}
-          className="mySwiper"
-        >
-          {testimonials.map((testimonial) => (
-            <SwiperSlide key={testimonial.id}>
-              <Testimonial testimonial={testimonial} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      <p>Some of my old Colleagues said some nice things...</p>
+      <div className="container test">
+        <div className="test" style={{margin: "0 auto"}}>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            mousewheel={true}
+            keyboard={{
+              enabled: true,
+            }}
+            modules={[Pagination, Autoplay, Keyboard]}
+            className="mySwiper"
+          >
+            {testimonials.map((testimonial) => (
+              <SwiperSlide key={testimonial.id}>
+                <Testimonial testimonial={testimonial} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </section>
   );

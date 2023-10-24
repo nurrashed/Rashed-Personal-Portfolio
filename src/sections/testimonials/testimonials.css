@@ -21,9 +21,10 @@
 }
 
 .testimonial__client-avatar {
-    width: 2.5rem;
+    margin: 0 auto;
+    width: 6.5rem;
     aspect-ratio: 1/1;
-    border-radius: var(--border-radius-2);
+    border-radius: 50%;
     overflow: hidden;
     transition: var(--transition);
 }
@@ -37,3 +38,39 @@
     background: var(--color-primary);
 }
 
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .test {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .test {
+        width: 90%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .test {
+        width: 70%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .test {
+        width: 60%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .test {
+        width: 50%;
+    }
+}

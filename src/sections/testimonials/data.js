@@ -13,7 +13,7 @@ const data = [
     quote2: `I believe any organization will benefit from having Nur Mohammad Rashed in their software development team.`,
     avatar: Rizvi,
     name: "Sarwarul Rizvi",
-    profession: "Engineering Manager at Keystone Education Group",
+    profession: "Engineering Manager, Keystone Education Group",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const data = [
     team because of his strong work ethic, commitment, and kind approach. I strongly agree.`,
     avatar: Muthu,
     name: "Muthusamy Ramasamy",
-    profession: "Tech Lead at Nordfin Capital Group",
+    profession: "Tech Lead, Nordfin Capital Group",
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const data = [
     I recommend Rashed for any frontend development position.`,
     avatar: Aadil,
     name: "Muhammad Aadil",
-    profession: "Software Developer at Nordfin Capital Group",
+    profession: "Software Developer, Nordfin Capital Group",
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ const data = [
     and wish Nur the best of luck.`,
     avatar: Adam,
     name: "Adam Sam",
-    profession: "CEO at Monok.com - AI Startup within Content Generation",
+    profession: "CEO, Monok",
   },
 ];
 
