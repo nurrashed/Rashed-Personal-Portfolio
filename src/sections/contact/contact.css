@@ -26,7 +26,7 @@
 
 .contact-avatar {
     margin: 0 auto;
-    width: 30rem;    
+    width: 30rem;
     overflow: hidden;
     transition: var(--transition);
     padding-bottom: 3rem;
@@ -38,5 +38,13 @@
 @media screen and (max-width: 600px) {
     .contact__container {
         gap: 1.5rem;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .contact-avatar {
+        
+        width: auto;
     }
 }

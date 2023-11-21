@@ -9,7 +9,7 @@ const Contact = () => {
       <p>Shoot me a message via any of the links below!</p>
       {/* <div className="container contact__container">Hello</div> */}
       <div
-        /* style={{border:"1px solid red", margin:"0 auto", width:"30rem"}} */ className="contact-avatar"
+         className="contact-avatar"
       >
         <img src={contactImage} alt="Contact" />
       </div>

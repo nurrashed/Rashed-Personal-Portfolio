@@ -20,9 +20,9 @@ const App = () => {
       <Portfolio />
       <Testimonials />
       <Contact />
-      <FAQs />
+      {/* <FAQs /> */}
       <Footer />
-      <FloatingNav />
+      {/* <FloatingNav /> */}
     </main>
   );
 };
