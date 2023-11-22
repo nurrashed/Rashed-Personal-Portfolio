@@ -6,8 +6,8 @@ import AnimCursor from "./components/animatedCursor/AnimCursor";
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 root.render(
-  <React.StrictMode>
+  <>
     <AnimCursor />
     <App />
-  </React.StrictMode>
+  </>
 );
