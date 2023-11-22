@@ -4,8 +4,6 @@ import data from "./data";
 import "./experience.css";
 
 const Experience = () => {
-  console.log("frontend: ", data.frontendExperience[0].experienceName);
-
   return (
     <section id="experience">
       <h2>My Experiences</h2>
