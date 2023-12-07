@@ -4,7 +4,7 @@ import { MdHomeRepairService } from "react-icons/md";
 import { AiFillAppstore } from "react-icons/ai";
 import { AiFillMessage } from "react-icons/ai";
 import { BsPatchCheckFill } from "react-icons/bs";
-import { BsFillHandThumbsUpFill } from "react-icons/bs";
+/* import { BsFillHandThumbsUpFill } from "react-icons/bs"; */
 
 const data = [
   { id: 1, link: "#", icon: <AiFillHome /> },
