@@ -55,8 +55,8 @@ const App = () => {
       <Services />
       <Portfolio />
       <Testimonials />
+      <FAQs />
       <Contact />
-      {/* <FAQs /> */}
       <Footer />
       {showFloatingNav && <FloatingNav />}
     </main>

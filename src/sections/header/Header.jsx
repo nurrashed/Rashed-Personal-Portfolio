@@ -1,21 +1,29 @@
+import { useEffect } from "react";
 import HeaderImage from "../../assets/header.png";
 import data from "./data";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./header.css";
 import AnimatedButton from "./AnimatedButton";
-const header = () => {
+const Header = () => {
+  
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <header id="header">
       <div className="container header__container">
-        <div className="header__profile">
+        <div className="header__profile" data-aos="flip-up">
           <img src={HeaderImage} alt="Header Profile" />
         </div>
-        <h3>Nur Mohammad Rashed</h3>
-        <p>
+        <h3 data-aos="fade-up">Nur Mohammad Rashed</h3>
+        <p data-aos="fade-up">
           You are a click away from building your dream website or web app. Send
           me the details of your project for a modern, mobile responsive, highly
-          performant website today! 
+          performant website today!
         </p>
-        <div className="header__cta">
+        <div className="header__cta" data-aos="fade-up">
           <a href="#contact" className="btn primary">
             Let's Talk
           </a>
@@ -61,4 +69,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;

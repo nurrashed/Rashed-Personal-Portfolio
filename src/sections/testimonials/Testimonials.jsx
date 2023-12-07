@@ -19,7 +19,11 @@ const Testimonials = () => {
       <h2>What My Colleagues Say about me</h2>
       <p>Some of my old Colleagues said some nice things...</p>
       <div className="container test">
-        <div className="test" style={{margin: "0 auto"}}>
+        <div
+          className="test"
+          style={{ margin: "0 auto" }}
+          data-aos="flip-right"
+        >
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
