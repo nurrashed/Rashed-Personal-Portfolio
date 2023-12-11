@@ -56,6 +56,7 @@ header {
     border-radius: 9rem 9rem 2rem 2rem;
     overflow: hidden;
     margin-bottom: 1.5rem;
+    
 }
 
 .header__container p {
@@ -95,6 +96,14 @@ header {
     transform: translateX(-0.5rem);
 }
 
+.name {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: .5rem !important;
+}
 
 /* LARGE DEVICE (DESKTOP COMPUTER, 1024px and up) */
 @media screen and (min-width: 1024px) {
@@ -134,6 +143,12 @@ header {
     .scroll__down {
         display: none;
     }
+
+    .name {
+        letter-spacing: .8px;
+        word-spacing: .8px;
+        font-size: 14px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -145,6 +160,7 @@ header {
     .scroll__down {
         display: none;
     }
+
 
 }
 
@@ -159,3 +175,4 @@ header {
         display: block;
     }
 }
+

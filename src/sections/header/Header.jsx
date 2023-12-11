@@ -1,27 +1,64 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import HeaderImage from "../../assets/header.png";
 import data from "./data";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./header.css";
 import AnimatedButton from "./AnimatedButton";
+import GraphemeSplitter from "grapheme-splitter";
+import { TypeAnimation } from "react-type-animation";
 const Header = () => {
-  
+  const splitter = new GraphemeSplitter();
+  const [textColor, setTextColor] = useState("var(--color-black)");
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
 
   return (
     <header id="header">
-      <div className="container header__container">
+      <div
+        className="container header__container">
         <div className="header__profile" data-aos="flip-up">
           <img src={HeaderImage} alt="Header Profile" />
         </div>
-        <h3 data-aos="fade-up">Nur Mohammad Rashed</h3>
-        <p data-aos="fade-up">
-          You are a click away from building your dream website or web app. Send
-          me the details of your project for a modern, mobile responsive, highly
-          performant website today!
+        <p
+          className="name"
+          style={{
+            color: textColor,
+          }}
+          data-aos="fade-up"
+        >
+          <TypeAnimation
+            splitter={(str) => splitter.splitGraphemes(str)}
+            sequence={[
+              "Hi, I am Nur Mohammad Rashed",
+              2000,
+              () => setTextColor("var(--color-primary)"),
+              "Hej, jag år Nur Mohammad Rashed",
+              2000,
+              () => setTextColor("var(--color-dark)"),
+              "你好，我是努爾·穆罕默德·拉希德",
+              2000,
+              () => setTextColor("green"),
+              "Hola, soy Nur Mohammad Rashed",
+              2000,
+              () => setTextColor("blue"),
+              "Ciao, sono Nur Mohammad Rashed",
+              2000,
+              () => setTextColor("var(--color-black)"),
+            ]}
+            repeat={Infinity}
+          />
+        </p>
+        <p data-aos="fade-up" style={{ textAlign: "justify" }}>
+          Creative, passionate, and certified frontend developer with experience
+          working in the fintech industry. Proficient in HTML, CSS, and JS, with
+          strong foundation in front-end frameworks like React, Next.JS and
+          moderate level familiarity in frontend frameworks like Angular and
+          Vue.JS. <br /> <br /> I am committed to continuously improving my
+          skills in HTML, CSS, JavaScript, and modern frontend frameworks. Ready
+          to bring excellent coding expertise, great communication skills and
+          innovative problem-solving ideas to your dynamic team.
         </p>
         <div className="header__cta" data-aos="fade-up">
           <a href="#contact" className="btn primary">

@@ -10,7 +10,7 @@ const Experience = () => {
       <p>What Skills I Have</p>
       <div className="container experience__container">
         {/* FRONTEND */}
-        <div className="experience__frontend" data-aos="fade-right">
+        <div className="experience__frontend" data-aos="zoom-in-up">
           <h3>Frontend Development</h3>
           <div className="experience__content">
             {data.frontendExperience.map((item) => (
@@ -28,7 +28,7 @@ const Experience = () => {
         </div>
 
         {/* Backend */}
-        <div className="experience__backend" data-aos="fade-left">
+        <div className="experience__backend" data-aos="zoom-in-up">
           <h3>Backend Development</h3>
           <div className="experience__content">
             {data.backendExperience.map((item) => (
