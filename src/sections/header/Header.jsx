@@ -16,8 +16,7 @@ const Header = () => {
 
   return (
     <header id="header">
-      <div
-        className="container header__container">
+      <div className="container header__container">
         <div className="header__profile" data-aos="flip-up">
           <img src={HeaderImage} alt="Header Profile" />
         </div>
@@ -31,35 +30,29 @@ const Header = () => {
           <TypeAnimation
             splitter={(str) => splitter.splitGraphemes(str)}
             sequence={[
-              "Hi, I am Nur Mohammad Rashed",
-              2000,
+              "Hi, I am Nur Mohammad 🤓 Rashed",
+              4000,
               () => setTextColor("var(--color-primary)"),
-              "Hej, jag år Nur Mohammad Rashed",
-              2000,
+              "Hej, jag år Nur Mohammad 🤓 Rashed",
+              4000,
               () => setTextColor("var(--color-dark)"),
-              "你好，我是努爾·穆罕默德·拉希德",
-              2000,
+              "你好，我是努爾·穆罕默德 🤓 拉希德",
+              4000,
               () => setTextColor("green"),
-              "Hola, soy Nur Mohammad Rashed",
-              2000,
+              "Hola, soy Nur Mohammad 🤓 Rashed",
+              4000,
               () => setTextColor("blue"),
-              "Ciao, sono Nur Mohammad Rashed",
-              2000,
+              "Ciao, sono Nur Mohammad 🤓 Rashed",
+              4000,
               () => setTextColor("var(--color-black)"),
             ]}
             repeat={Infinity}
           />
         </p>
-        <p data-aos="fade-up" style={{ textAlign: "justify" }}>
-          Creative, passionate, and certified frontend developer with experience
-          working in the fintech industry. Proficient in HTML, CSS, and JS, with
-          strong foundation in front-end frameworks like React, Next.JS and
-          moderate level familiarity in frontend frameworks like Angular and
-          Vue.JS. <br /> <br /> I am committed to continuously improving my
-          skills in HTML, CSS, JavaScript, and modern frontend frameworks. Ready
-          to bring excellent coding expertise, great communication skills and
-          innovative problem-solving ideas to your dynamic team.
-        </p>
+        {/* <p data-aos="fade-up" style={{textTransform:"uppercase"}}>An enthusiastic Frontend developer</p> */}
+        <span className="title" data-aos="fade-up">
+          An enthusiastic Frontend developer <span className="rocket-logo">🚀</span>
+        </span>
         <div className="header__cta" data-aos="fade-up">
           <a href="#contact" className="btn primary">
             Let's Talk

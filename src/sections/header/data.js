@@ -1,11 +1,13 @@
-import { AiOutlineInstagram } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
-import {FaFacebookSquare} from "react-icons/fa"
 
 const data = [
-  { id: 1, link: "https://instagram.com", icon: <AiOutlineInstagram /> },
-  { id: 2, link: "https://twitter.com", icon: <FaFacebookSquare /> },
-  { id: 4, link: "https://github.com", icon: <AiFillGithub /> },
+  {
+    id: 2,
+    link: "https://www.linkedin.com/in/nur-mohammad-rashed-frontend-javascript-react-web-developer/",
+    icon: <FaLinkedin />,
+  },
+  { id: 4, link: "https://github.com/nurrashed", icon: <AiFillGithub /> },
 ];
 
 export default data;

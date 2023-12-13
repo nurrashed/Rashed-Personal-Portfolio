@@ -14,7 +14,7 @@ nav {
 
 .nav__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -40,5 +40,10 @@ nav {
 @media screen and (max-width: 1024px) {
     .nav__menu {
         display: none;
+    }
+
+    .nav__container {
+        justify-content:start;
+        align-items: start;
     }
 }

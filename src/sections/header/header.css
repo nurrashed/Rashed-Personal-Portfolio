@@ -26,6 +26,14 @@
     }
 }
 
+.title {
+    animation: shine 3s infinite linear;
+}
+
+.rocket-logo {
+    -webkit-text-fill-color: hsl(0, 0%, 100%);
+}
+
 .scroll__down {
     display: block;
     transition: var(--transition);
@@ -56,7 +64,7 @@ header {
     border-radius: 9rem 9rem 2rem 2rem;
     overflow: hidden;
     margin-bottom: 1.5rem;
-    
+
 }
 
 .header__container p {
@@ -176,3 +184,105 @@ header {
     }
 }
 
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+    .title {
+        font-size: 12px !important;
+        font-weight: bold !important;
+        letter-spacing: 2px !important;
+        text-transform: uppercase;
+        padding: 0px 0px 6px 0px !important;
+    }
+}
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+    .rocket-logo {
+        display: none;
+    }
+
+    @keyframes shine {
+        0% {
+            background-position: -15px;
+        }
+
+        60% {
+            background-position: 292px;
+        }
+
+        100% {
+            background-position: 293px;
+        }
+    }
+
+    .title {
+        text-align: center;
+        padding: 14px 14px 20px 14px !important;
+        background: linear-gradient(to right, var(--color-primary) 0, hsl(0, 0%, 100%) 10%, var(--color-primary) 20%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 1.5px !important;
+    }
+
+}
+
+/* Extra small devices (phones, 400px and up) */
+@media only screen and (min-width: 400px) {
+
+    @keyframes shine {
+        0% {
+            background-position: -45px;
+        }
+
+        60% {
+            background-position: 375px;
+        }
+
+        100% {
+            background-position: 375px;
+        }
+    }
+
+    .title {
+        font-size: 16px !important;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 16px !important;
+        background: linear-gradient(to right, var(--color-primary) 0, hsl(0, 0%, 100%) 10%, var(--color-primary) 20%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 1.5px !important;
+    }
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .title {
+        color: var(--color-primary);
+        font-size: 22px !important;
+        font-weight: bold !important;
+        letter-spacing: 4px !important;
+        text-transform: uppercase;
+        padding: 0px 64px 20px 64px !important;
+        background: linear-gradient(to right, var(--color-primary) 0%, hsl(0, 0%, 100%) 10%, var(--color-primary) 20%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 3s infinite linear;
+    }
+
+    @keyframes shine {
+        0% {
+            background-position: 0px;
+        }
+
+        60% {
+            background-position: 690px;
+        }
+
+        100% {
+            background-position: 690px;
+        }
+    }
+}
