@@ -20,7 +20,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    
+
 }
 
 .card.about__card {
@@ -58,6 +58,24 @@
 
 
 
+.cvButton {
+    width: 40% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 2rem !important;
+}
+
+.coverLetterButton {
+    width: 40% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 2rem !important;
+}
+
+
+
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1024px) {
     .about__left {
@@ -85,4 +103,27 @@
         margin-top: 2rem;
     }
 
+
+
+    .cvButton {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .coverLetterButton {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .downloadCV {
+        display: flex;
+        justify-content: space-around;
+    }
 }
