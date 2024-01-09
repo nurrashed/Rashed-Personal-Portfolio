@@ -1,9 +1,9 @@
 import AboutImage from "../../assets/about1.jpg";
 import CV from "../../assets/CV_Nur Mohammad Rashed.pdf";
-import CoverLetter from "../../assets/Cover_Letter_Nur Mohammad Rashed.pdf";
+import CoverLetter from "../../assets/Cover Letter_Nur Mohammad Rashed.pdf";
 import { HiDownload } from "react-icons/hi";
-import Card from "../../components/Card";
-import data from "./data";
+/* import Card from "../../components/Card";
+import data from "./data"; */
 import "./about.css";
 
 const About = () => {
@@ -16,8 +16,8 @@ const About = () => {
           </div>
         </div>
         <div className="about__right">
-          <h2>About Me</h2>
-          <div className="about__cards">
+          <h2 style={{paddingBottom:"2rem"}}>About Me</h2>
+          {/* <div className="about__cards">
             {data.map((item) => (
               <Card key={item.id} className="about__card">
                 <span className="about__card-icon">{item.icon}</span>
@@ -25,7 +25,7 @@ const About = () => {
                 <small>{item.desc}</small>
               </Card>
             ))}
-          </div>
+          </div> */}
           <p style={{ textAlign: "justify" }}>
             With over two and half years of professional experience as a
             front-end developer, I have led and managed various front-end

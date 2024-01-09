@@ -8,7 +8,7 @@ import Testimonials from "./sections/testimonials/Testimonials";
 import Contact from "./sections/contact/Contact";
 import Footer from "./sections/footer/Footer";
 import FloatingNav from "./sections/floating-nav/FloatingNav";
-import Experience from "./sections/experience/Experience";
+import Skill from "./sections/skill/Skill";
 import { useRef, useState, useEffect } from "react";
 const App = () => {
 
@@ -52,7 +52,7 @@ const App = () => {
       <NavBar />
       <Header />
       <About />
-      <Experience />
+      <Skill />
       <Services />
       <Portfolio />
       <Testimonials />
