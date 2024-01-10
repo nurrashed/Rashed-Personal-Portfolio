@@ -4,8 +4,8 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 export const links = [
   { id: 1, link: "#", title: "Home" },
   { id: 2, link: "#about", title: "About" },
-  { id: 3, link: "#experience", title: "Experience" },
-  { id: 4, link: "#services", title: "Services" },
+  { id: 3, link: "#skill", title: "Skills" },
+  { id: 4, link: "#experiences", title: "Experiences" },
   { id: 5, link: "#portfolio", title: "Portfolio" },
   { id: 6, link: "#contact", title: "Contact" },
 ];

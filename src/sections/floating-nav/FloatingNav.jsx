@@ -12,8 +12,8 @@ const FloatingNav = () => {
         items={[
           "header",
           "about",
-          "experience",
-          "services",
+          "skill",
+          "experiences",
           "portfolio",
           /* "testimonials", */
           "contact",
