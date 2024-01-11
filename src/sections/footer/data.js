@@ -13,7 +13,7 @@ export const links = [
 export const socials = [
   {
     id: 1,
-    link: "https://www.linkedin.com/in/nur-mohammad-rashed-071a2316/",
+    link: "https://www.linkedin.com/in/nur-mohammad-rashed-frontend-javascript-react-web-developer/",
     icon: <AiOutlineLinkedin />,
   },
   { id: 2, link: "https://github.com/nurrashed", icon: <AiFillGithub /> },
